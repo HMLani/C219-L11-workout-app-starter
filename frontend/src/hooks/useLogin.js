@@ -20,6 +20,7 @@ export const useLogin = () => {
         if ( !res.ok ) {
             setIsLoading(false)
             setError(json.error)
+            return
         }
 
         if ( res.ok ) {

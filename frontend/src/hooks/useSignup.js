@@ -20,6 +20,7 @@ export const useSignup = () => {
     if (!res.ok) {
       setIsLoading(false)
       setError(json.error)
+      return
     }
     if (res.ok) {
       // save to local storage
