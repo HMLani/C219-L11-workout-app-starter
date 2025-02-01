@@ -18,7 +18,7 @@ const WorkoutDetails = ({ workout }) => {
       // `/api/workouts/${workout._id}`,
       {
       method: 'DELETE',
-      headers: { 'Authorization': `Bearer ${user.token}`, 'Access-Control-Max-Age': 7200}
+      headers: { 'Authorization': `Bearer ${user.token}`}
     })
     const json = await response.json()
 
