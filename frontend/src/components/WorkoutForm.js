@@ -30,7 +30,8 @@ const WorkoutForm = () => {
       body: JSON.stringify(workout),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${user.token}`
+        'Authorization': `Bearer ${user.token}`,
+        'Access-Control-Max-Age': 7200
       }
     })
     const json = await response.json()
