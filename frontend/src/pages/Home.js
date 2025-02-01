@@ -25,7 +25,6 @@ const Home = () => {
 
     if ( user ) {
       fetchWorkouts()
-      return
     }
   }, [dispatch, user])
 
